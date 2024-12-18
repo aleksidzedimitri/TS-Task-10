@@ -1,0 +1,46 @@
+/* Flex container for layout */
+.container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Space between form and table */
+}
+
+/* Form wrapper */
+.formWrapper {
+  width: 100%;
+}
+
+.formWrapper > * {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+/* Table styling */
+.table {
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+.table th,
+.table td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+.name,
+.age {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort_image {
+  width: 16px;
+  height: 16px;
+}
+
+.desc {
+  transform: rotate(180deg);
+}
